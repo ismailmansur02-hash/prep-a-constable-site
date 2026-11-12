@@ -1,9 +1,10 @@
 <!doctype html>
-<html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Support · Prep a Constable</title>
 <meta name="description" content="How to contact Prep a Constable support.">
 <meta name="robots" content="index, follow">
-<meta name="theme-color" content="#14305a">
+<meta name="theme-color" content="#f6f4ee" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#10161f" media="(prefers-color-scheme: dark)">
 <meta name="color-scheme" content="light dark">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="canonical" href="https://prepaconstable.co.uk/support/">
@@ -20,19 +21,22 @@
 <meta name="twitter:image" content="https://prepaconstable.co.uk/assets/og.png">
 <link rel="icon" href="../assets/favicon-32.png" type="image/png" sizes="32x32">
 <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="preload" href="../assets/fonts/fraunces-600.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/manrope-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="../assets/site.css">
+<script>document.documentElement.className="js"</script>
 </head>
 <body>
 <a class="skip" href="#content">Skip to content</a>
 <header class="site-header"><div class="wrap bar">
-<a class="brand" href="../"><img src="../assets/icon-128.png" alt="" width="36" height="36"><span>Prep a Constable</span></a>
-<nav aria-label="Primary">
-<a href="../#features">Features</a>
-<a href="../#how-it-works">How it works</a>
-<a href="../#law">Law</a>
-<a href="../#pricing">Pricing</a>
-<a href="../#faq">FAQ</a>
-<a href="../#download">Download</a>
+<a class="brand" href="../"><img src="../assets/icon-128.png" alt="" width="34" height="34"><span>Prep a Constable</span></a>
+<button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+<nav id="site-nav" aria-label="Primary">
+<a href="../#features">What's inside</a>
+<a href="../#how-it-works">How you use it</a>
+<a href="../#law">The law</a>
+<a href="../#pricing">Price</a>
+<a href="../#faq">Questions</a>
 <a href="../support/" aria-current="page">Support</a>
 </nav></div></header>
 <main id="content" tabindex="-1">
@@ -48,7 +52,7 @@
 <p><strong>Spotted a mistake in the law?</strong> Please tell us the section and what you think it should say. Do not send operational information, case details, or personal information about a member of the public.</p></article>
 </main>
 <footer class="site-footer"><div class="wrap">
-<a class="brand" href="../"><img src="../assets/icon-128.png" alt="" width="36" height="36"><span>Prep a Constable</span></a>
+<a class="brand" href="../"><img src="../assets/icon-128.png" alt="" width="34" height="34"><span>Prep a Constable</span></a>
 <p>Not an official police app. Prep a Constable is not produced, endorsed or approved by any police force, the Metropolitan Police Service, the Home Office or the College of Policing.</p>
 <p>Published by Arim Capital Ltd.</p>
 <p>Arim Capital Ltd is a company registered in England and Wales. Company number 17574560. Registered office: 128 City Road, London, EC1V 2NX, United Kingdom.</p>
@@ -57,4 +61,5 @@
 <p>This website sets no cookies and uses no analytics.</p>
 </div></footer>
 
+<script>(function(){var b=document.querySelector(".menu-btn"),n=document.getElementById("site-nav");if(!b||!n)return;function set(o){n.classList.toggle("open",o);b.setAttribute("aria-expanded",o?"true":"false")}b.addEventListener("click",function(){set(!n.classList.contains("open"))});n.addEventListener("click",function(e){if(e.target.closest("a"))set(false)});document.addEventListener("keydown",function(e){if(e.key==="Escape")set(false)})})();</script>
 </body></html>
