@@ -407,5 +407,5 @@ main [id] { scroll-margin-top: calc(var(--header-h) + env(safe-area-inset-top) +
   .device { box-shadow: none; }
 }
 
-/* an email address never breaks across lines */
-a[href^="mailto:"]{white-space:nowrap}
+/* the address sits on its own line; it stays whole when it fits and only breaks on a screen too narrow for it */
+a[href^="mailto:"]{overflow-wrap:anywhere}
