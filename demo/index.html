@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<!-- The demo makes no network request of its own: scripts, fonts and images come from this folder and
+     connect-src 'none' blocks fetch, XHR and WebSocket. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'none'; form-action 'none'; base-uri 'none'">
+<meta name="robots" content="noindex">
+<meta name="referrer" content="no-referrer">
+<title>Prep a Constable demo</title>
+<style>
+@font-face{font-family:"Fraunces";font-weight:400;font-display:swap;src:url(fonts/fraunces-400.woff2) format("woff2")}
+@font-face{font-family:"Fraunces";font-weight:500;font-display:swap;src:url(fonts/fraunces-500.woff2) format("woff2")}
+@font-face{font-family:"Fraunces";font-weight:600;font-display:swap;src:url(fonts/fraunces-600.woff2) format("woff2")}
+@font-face{font-family:"Playfair Display";font-weight:500;font-display:swap;src:url(fonts/playfair-500.woff2) format("woff2")}
+@font-face{font-family:"Manrope";font-weight:400;font-display:swap;src:url(fonts/manrope-400.woff2) format("woff2")}
+@font-face{font-family:"Manrope";font-weight:500;font-display:swap;src:url(fonts/manrope-500.woff2) format("woff2")}
+@font-face{font-family:"Manrope";font-weight:600;font-display:swap;src:url(fonts/manrope-600.woff2) format("woff2")}
+@font-face{font-family:"Manrope";font-weight:700;font-display:swap;src:url(fonts/manrope-700.woff2) format("woff2")}
+@font-face{font-family:"JetBrains Mono";font-weight:500;font-display:swap;src:url(fonts/jetbrains-mono-500.woff2) format("woff2")}
+html,body{margin:0;padding:0;background:#fafaf7}#root{min-height:100vh}
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script src="app.js"></script>
+</body>
+</html>

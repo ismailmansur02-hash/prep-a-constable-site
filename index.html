@@ -32,6 +32,7 @@
 <a class="brand" href="./"><img src="assets/icon-128.png" alt="" width="34" height="34"><span>Prep a Constable</span></a>
 <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
 <nav id="site-nav" aria-label="Primary">
+<a href="#demo" class="demo-link" hidden>Try it</a>
 <a href="#features">What's inside</a>
 <a href="#how-it-works">How you use it</a>
 <a href="#law">The law</a>
@@ -51,6 +52,27 @@
 <ul class="stores"><li><div class="store"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/badges/app-store-white.svg"><img class="badge-apple" src="assets/badges/app-store.svg" alt="Download on the App Store" width="120" height="40"></picture></div><p class="soon">Coming soon</p></li><li><div class="store"><img class="badge-play" src="assets/badges/google-play.png" alt="Get it on Google Play" width="165" height="64"></div><p class="soon">Coming soon</p></li></ul>
 </div>
 <figure class="device"><img src="assets/screens/mock-question-330.webp" srcset="assets/screens/mock-question-330.webp 330w, assets/screens/mock-question-660.webp 660w" sizes="(min-width: 900px) 320px, 300px" alt="An AP1 mock in the app. Question 1 of 20 with 29 minutes 58 seconds left, a scenario about a discrimination complaint, and four answers to choose from." width="330" height="717" fetchpriority="high"></figure>
+</section>
+
+<section class="section demo" id="demo" hidden>
+<div class="wrap demo-grid">
+<div class="demo-copy">
+<p class="eyebrow">Try it</p>
+<h2>Have a go before you buy</h2>
+<p>This is the real app running in your browser. Tap through the lessons, questions, flashcards and the legislation companion.</p>
+<ul class="demo-notes">
+<li>Nothing you do here is saved or sent anywhere.</li>
+<li>The microphone is off in this demo. The spoken drills need the app on your phone.</li>
+<li>It is the web version of the app, so fonts and spacing can differ slightly from the phone.</li>
+</ul>
+<button class="demo-again" type="button" hidden>Start again</button>
+</div>
+<div class="demo-device" id="demo-device">
+<div class="demo-bezel"><div class="demo-screen" id="demo-screen">
+<button class="demo-start" type="button" aria-label="Start the interactive demo"><img src="assets/demo-poster-330.webp" srcset="assets/demo-poster-330.webp 330w, assets/demo-poster-660.webp 660w" sizes="300px" alt="" width="330" height="651" loading="lazy"><span class="demo-play">Tap to try the app</span></button>
+</div></div>
+</div>
+</div>
 </section>
 
 <section class="section inside" id="features">
@@ -197,4 +219,5 @@
 </div></footer>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Prep a Constable","applicationCategory":"EducationalApplication","operatingSystem":"iOS, Android","description":"Independent revision for England and Wales constable assessments: questions, mocks, flashcards, spoken drills and a legislation companion.","publisher":{"@type":"Organization","name":"Arim Capital Ltd","url":"https://prepaconstable.co.uk","email":"support@prepaconstable.co.uk"},"offers":{"@type":"Offer","price":"6.99","priceCurrency":"GBP"}}</script>
 <script>(function(){var b=document.querySelector(".menu-btn"),n=document.getElementById("site-nav");if(!b||!n)return;function set(o){n.classList.toggle("open",o);b.setAttribute("aria-expanded",o?"true":"false")}b.addEventListener("click",function(){set(!n.classList.contains("open"))});n.addEventListener("click",function(e){if(e.target.closest("a"))set(false)});document.addEventListener("keydown",function(e){if(e.key==="Escape")set(false)})})();</script>
+<script>(function(){var sec=document.getElementById("demo");if(!sec)return;sec.hidden=false;var l=document.querySelector(".demo-link");if(l)l.hidden=false;var dev=document.getElementById("demo-device"),scr=document.getElementById("demo-screen"),again=sec.querySelector(".demo-again"),start=sec.querySelector(".demo-start"),W=390,H=800,fr=null;function fit(){var w=scr.clientWidth,k=w/W;scr.style.height=(H*k)+"px";if(fr){fr.style.transform="scale("+k+")"}}function launch(){if(fr)fr.remove();fr=document.createElement("iframe");fr.src="demo/";fr.title="Prep a Constable interactive demo";fr.width=W;fr.height=H;fr.setAttribute("sandbox","allow-scripts allow-popups allow-popups-to-escape-sandbox");fr.setAttribute("referrerpolicy","no-referrer");fr.setAttribute("loading","eager");scr.appendChild(fr);if(start)start.hidden=true;again.hidden=false;fit()}start.addEventListener("click",launch);again.addEventListener("click",launch);window.addEventListener("resize",fit);fit()})();</script>
 </body></html>
