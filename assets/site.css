@@ -406,3 +406,6 @@ main [id] { scroll-margin-top: calc(var(--header-h) + env(safe-area-inset-top) +
   .site-header, .menu-btn, .stores { display: none; }
   .device { box-shadow: none; }
 }
+
+/* an email address never breaks across lines */
+a[href^="mailto:"]{white-space:nowrap}
