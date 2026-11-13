@@ -421,3 +421,4 @@ main [id] { scroll-margin-top: calc(var(--header-h) + env(safe-area-inset-top) +
 .demo-play{position:absolute;left:50%;bottom:7%;transform:translateX(-50%);min-height:48px;display:flex;align-items:center;padding:0 22px;border-radius:999px;background:#14284b;color:#fff;font-weight:700;white-space:nowrap}
 .demo-start:focus-visible{outline:3px solid #14284b;outline-offset:-3px}.demo-again:focus-visible{outline:3px solid currentColor;outline-offset:3px}
 @media (min-width:900px){.demo-grid{grid-template-columns:minmax(0,1fr) minmax(0,.8fr);gap:56px}.demo-device{justify-self:end}}
+.demo-fail[hidden]{display:none!important}.demo-fail{margin-top:14px;font-weight:600}.demo-own{margin-top:12px;font-size:.9375rem}
