@@ -538,3 +538,9 @@ main [id] { scroll-margin-top: calc(var(--header-h) + env(safe-area-inset-top) +
 .mark,h1 .mark{background:linear-gradient(transparent 56%,var(--mark) 56%,var(--mark) 92%,transparent 92%)!important;color:inherit!important;padding:0 .06em;margin:0;border-radius:0;text-decoration:none!important;-webkit-box-decoration-break:clone;box-decoration-break:clone}
 .mark,h1 .mark{background:none!important;text-decoration:underline!important;text-decoration-color:var(--mark);text-decoration-thickness:.11em;text-underline-offset:.14em;text-decoration-skip-ink:none;padding:0}
 .mark,h1 .mark{text-decoration:none!important;text-decoration-line:underline!important;text-decoration-color:var(--mark)!important}
+.links,.download .links{display:flex;flex-wrap:wrap;justify-content:center;gap:0 24px;text-align:center}
+.links a{display:inline-flex;align-items:center;min-height:44px}
+#download .wrap,#download .wrap>*{text-align:center}
+#download .get-badges{justify-content:center}
+.download .links a,.links a{margin-right:0}
+#download .wrap>p{margin-left:auto;margin-right:auto}
