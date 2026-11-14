@@ -423,3 +423,11 @@ main [id] { scroll-margin-top: calc(var(--header-h) + env(safe-area-inset-top) +
 @media (min-width:900px){.demo-grid{grid-template-columns:minmax(0,1fr) minmax(0,.8fr);gap:56px}.demo-device{justify-self:end}}
 .demo-fail[hidden]{display:none!important}.demo-fail{margin-top:14px;font-weight:600}.demo-own{margin-top:12px;font-size:.9375rem}
 .hero-try{margin:0 0 22px}.try-btn{display:inline-flex;align-items:center;min-height:48px;padding:0 24px;border-radius:999px;background:#14284b;color:#fff;font-weight:700;text-decoration:none}.try-btn:hover{background:#0e1b33}.try-btn:focus-visible{outline:3px solid currentColor;outline-offset:3px}@media (prefers-color-scheme:dark){.try-btn{background:var(--mark);color:#14181f}.try-btn:hover{filter:brightness(.92)}}
+.hero-price{margin:22px 0 0;padding-top:18px;border-top:1px solid var(--rule);color:var(--soft)}
+.hero-device{justify-self:center;width:min(100%,340px)}
+.hero-device .demo-device{width:100%}
+[hidden].demo-device{display:none!important}
+.demo-small{margin:14px 4px 0;font-size:.875rem;line-height:1.45;color:var(--soft);text-align:center}
+.demo-fail{text-align:center}
+@media (min-width:900px){.hero{align-items:start}.hero-device{justify-self:end;position:sticky;top:calc(var(--header-h) + 24px)}}
+
