@@ -454,3 +454,5 @@ main [id] { scroll-margin-top: calc(var(--header-h) + env(safe-area-inset-top) +
   .use .device img,.law .device img{aspect-ratio:10 / 15;object-fit:cover;object-position:top}
 }
 @media (min-width:900px){.hero-try{display:none}}
+.law-small{font-size:.875rem;opacity:.8}
+.download .get-badges{margin-top:8px}
