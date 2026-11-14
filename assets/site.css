@@ -514,3 +514,4 @@ main [id] { scroll-margin-top: calc(var(--header-h) + env(safe-area-inset-top) +
 .get-badges li:first-child picture{display:block;width:auto;height:100%}
 .get-badges .badge-apple,.get-badges li:first-child .badge-apple{height:var(--bh);width:auto;max-width:none;margin:0}
 .get-badges .badge-play{height:var(--bh);width:auto;max-width:none;margin:0}
+.get-badges{--bh:clamp(36px,calc((100vw - 52px) / 6.8),60px)}
