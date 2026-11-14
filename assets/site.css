@@ -507,3 +507,10 @@ main [id] { scroll-margin-top: calc(var(--header-h) + env(safe-area-inset-top) +
 .get-badges li:first-child picture{width:auto}
 .get-badges li:first-child .badge-apple{width:auto;height:100%}
 .get-badges li:first-child .badge-apple{height:106%;max-width:none}
+/* store badges: official artwork, same height, no wrappers */
+.get-badges{gap:12px;--bh:clamp(44px,13vw,60px)}
+.get-badges li,.get-badges li:first-child,.get-badges li:last-child{width:auto;height:var(--bh);background:none;box-shadow:none;border-radius:0;overflow:visible;position:static;display:flex}
+.get-badges li::after{content:none!important}
+.get-badges li:first-child picture{display:block;width:auto;height:100%}
+.get-badges .badge-apple,.get-badges li:first-child .badge-apple{height:var(--bh);width:auto;max-width:none;margin:0}
+.get-badges .badge-play{height:var(--bh);width:auto;max-width:none;margin:0}
