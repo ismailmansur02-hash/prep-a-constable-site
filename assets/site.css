@@ -494,3 +494,5 @@ main [id] { scroll-margin-top: calc(var(--header-h) + env(safe-area-inset-top) +
 .foot-legal{margin-top:32px;padding-top:22px;border-top:1px solid var(--rule);font-size:.875rem}
 .foot-legal p{max-width:62em}
 @media (min-width:860px){.foot-grid{grid-template-columns:1.4fr 1fr 1fr .7fr}.foot-brand{grid-column:auto}}
+.get-badges li,.get-badges li:first-child{width:auto;background:none;box-shadow:none;border-radius:0;overflow:visible}
+.get-badges .badge-apple{height:var(--bh)}
