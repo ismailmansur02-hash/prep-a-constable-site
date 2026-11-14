@@ -534,3 +534,7 @@ main [id] { scroll-margin-top: calc(var(--header-h) + env(safe-area-inset-top) +
 .law .device{position:static!important;width:min(100%,320px)}
 .mark,h1 .mark{background:var(--mark);color:#14181f;text-decoration:none;padding:0 .18em;margin:0 -.04em;border-radius:.14em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
 @media (prefers-color-scheme:dark){.mark,h1 .mark{background:var(--mark);color:#14181f;text-decoration:none}}
+/* hero highlight: marker band under the lower half of the text, not a block */
+.mark,h1 .mark{background:linear-gradient(transparent 56%,var(--mark) 56%,var(--mark) 92%,transparent 92%)!important;color:inherit!important;padding:0 .06em;margin:0;border-radius:0;text-decoration:none!important;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.mark,h1 .mark{background:none!important;text-decoration:underline!important;text-decoration-color:var(--mark);text-decoration-thickness:.11em;text-underline-offset:.14em;text-decoration-skip-ink:none;padding:0}
+.mark,h1 .mark{text-decoration:none!important;text-decoration-line:underline!important;text-decoration-color:var(--mark)!important}
