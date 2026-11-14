@@ -431,3 +431,4 @@ main [id] { scroll-margin-top: calc(var(--header-h) + env(safe-area-inset-top) +
 .demo-fail{text-align:center}
 @media (min-width:900px){.hero{align-items:start}.hero-device{justify-self:end;position:sticky;top:calc(var(--header-h) + 24px)}}
 
+.hero-stores{margin-top:18px}
