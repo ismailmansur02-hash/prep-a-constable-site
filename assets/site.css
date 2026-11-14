@@ -515,3 +515,9 @@ main [id] { scroll-margin-top: calc(var(--header-h) + env(safe-area-inset-top) +
 .get-badges .badge-apple,.get-badges li:first-child .badge-apple{height:var(--bh);width:auto;max-width:none;margin:0}
 .get-badges .badge-play{height:var(--bh);width:auto;max-width:none;margin:0}
 .get-badges{--bh:clamp(36px,calc((100vw - 52px) / 6.8),60px)}
+.law-copy .law-lede{font-size:clamp(1.4rem,1.2vw + 1.1rem,1.75rem);line-height:1.4}
+.law-copy>p:not(.law-lede):not(.law-small):not(.eyebrow){font-size:clamp(1.2rem,.8vw + 1rem,1.4rem);line-height:1.5}
+.law .law-eyebrow{font-size:1.0625rem}
+.law-stats span{font-size:1.0625rem}
+.law-small{font-size:1rem}
+.law-stats{max-width:none}
