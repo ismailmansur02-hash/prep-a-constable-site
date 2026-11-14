@@ -496,3 +496,10 @@ main [id] { scroll-margin-top: calc(var(--header-h) + env(safe-area-inset-top) +
 @media (min-width:860px){.foot-grid{grid-template-columns:1.4fr 1fr 1fr .7fr}.foot-brand{grid-column:auto}}
 .get-badges li,.get-badges li:first-child{width:auto;background:none;box-shadow:none;border-radius:0;overflow:visible}
 .get-badges .badge-apple{height:var(--bh)}
+.get-badges li{width:calc(var(--bh)*3.357);height:var(--bh);position:relative;overflow:hidden;border-radius:calc(var(--bh)*.17);background:#000}
+.get-badges li:first-child::after{content:"";position:absolute;inset:0;border-radius:inherit;box-shadow:inset 0 0 0 1px #a6a6a6;pointer-events:none}
+.get-badges li:first-child .badge-apple{width:100%;height:auto;max-width:none}
+.get-badges li:last-child{background:none;overflow:visible;border-radius:0}
+.get-badges li:first-child{width:calc(var(--bh)*3.357);border-radius:calc(var(--bh)*.17);overflow:hidden;background:#000}
+.get-badges li:last-child{width:calc(var(--bh)*3.357)}
+.get-badges li:first-child picture{display:block;width:100%}
