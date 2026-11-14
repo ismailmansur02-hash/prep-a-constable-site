@@ -549,3 +549,7 @@ main [id] { scroll-margin-top: calc(var(--header-h) + env(safe-area-inset-top) +
 .get{text-align:center}
 .get .get-badges{justify-content:center}
 .get-note{text-align:center}
+.law-device{width:min(100%,340px);justify-self:center}
+.law .law-device .demo-device{width:100%}
+.law .demo-small{color:var(--on-navy-soft)}
+.law .demo-fail,.law .demo-fail a{color:#fff}
