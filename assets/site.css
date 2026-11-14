@@ -465,5 +465,8 @@ main [id] { scroll-margin-top: calc(var(--header-h) + env(safe-area-inset-top) +
 .law .device{width:min(100%,300px)}
 @media (min-width:860px){.law-grid{grid-template-columns:minmax(0,1fr) 340px}}
 .get,#download .wrap{container-type:inline-size}
-@supports (width:1cqw){.get-badges{flex-wrap:nowrap;--bh:min(60px,calc((100cqw - 14px) / 6.3))}}
+@supports (width:1cqw){.get-badges{flex-wrap:nowrap;--bh:min(60px,calc((100cqw - 14px) / 6.72))}}
 .get-badges li{overflow:hidden;flex:none}
+.get-badges li{width:calc(var(--bh)*3.357);justify-content:center;border-radius:calc(var(--bh)*.17);background:#000;box-shadow:inset 0 0 0 1px #a6a6a6}
+.get-badges .badge-apple{height:calc(var(--bh) - 2px)}
+@media (prefers-color-scheme:dark){.get-badges li:first-child{background:#fff;box-shadow:none}}
