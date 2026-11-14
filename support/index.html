@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en-GB"><head><meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-cvlem2Rlcb+inScVb7910PMAU98gRDEfAIUVUKXOWd4=' 'sha256-rfbsslGa/XWp/YQiBWVQQ/d7cWQomSovDuLhKlyTseo='; style-src 'self'; img-src 'self' data:; font-src 'self'; frame-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-cvlem2Rlcb+inScVb7910PMAU98gRDEfAIUVUKXOWd4=' 'sha256-rfbsslGa/XWp/YQiBWVQQ/d7cWQomSovDuLhKlyTseo='; style-src 'self'; img-src 'self' data:; font-src 'self'; frame-src 'self'; connect-src 'self' https://uqekeszdgeumwjdbompd.supabase.co; object-src 'none'; base-uri 'none'; form-action 'none'"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Support · Prep a Constable</title>
 <meta name="description" content="How to contact Prep a Constable support.">
 <meta name="robots" content="index, follow">
@@ -24,7 +24,7 @@
 <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
 <link rel="preload" href="../assets/fonts/fraunces-600.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="../assets/fonts/manrope-400.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="../assets/site.css?v=7">
+<link rel="stylesheet" href="../assets/site.css?v=8">
 <script>document.documentElement.className="js"</script>
 </head>
 <body>
@@ -43,24 +43,41 @@
 </nav></div></header>
 <main id="content" tabindex="-1">
 <article class="wrap prose"><h1>Support</h1>
-<p class="lede">We reply by email.</p>
-<p>Prep a Constable is provided by Arim Capital Ltd, a company registered in England and Wales. Company number 17574560. Registered office: 128 City Road, London, EC1V 2NX, United Kingdom.</p>
-<div class="card"><strong>Email</strong><a href="mailto:support@prepaconstable.co.uk">support@prepaconstable.co.uk</a></div>
+<p class="lede">Send us a message and we'll reply by email.</p>
+<form id="support-form" class="form" hidden>
+<label for="sf-email">Your email</label>
+<input id="sf-email" name="email" type="email" autocomplete="email" inputmode="email" required maxlength="254" placeholder="you@example.com">
+<label for="sf-topic">What is it about?</label>
+<select id="sf-topic" name="topic"><option>Question</option><option>Problem with the app</option><option>Refund</option><option>Complaint</option><option>Delete my account</option><option>Mistake in the law</option><option>Other</option></select>
+<label for="sf-msg">Message</label>
+<textarea id="sf-msg" name="message" rows="6" required minlength="5" maxlength="4000"></textarea>
+<div class="hp" aria-hidden="true"><label>Leave this empty <input name="website" tabindex="-1" autocomplete="off"></label></div>
+<button class="try-btn" type="submit">Send message</button>
+<p class="note">We use your email and message only to reply to you. Please don't include case details or personal information about anyone else.</p>
+</form>
+<p id="support-fallback" class="card"><strong>Email</strong><a href="mailto:support@prepaconstable.co.uk">support@prepaconstable.co.uk</a></p>
+<p id="support-status" class="form-status" role="status" aria-live="polite"></p>
 <h2>Common questions</h2>
-<p><strong>Refunds.</strong> Purchases are made through Apple or Google, who took the payment, so refunds are requested from them. Your statutory rights are set out in the <a href="../terms/">Terms</a>.</p>
+<p><strong>Refunds.</strong> Purchases are made through Apple or Google, who take the payment, so refunds are requested from them. Your statutory rights are set out in the <a href="../terms/">Terms</a>.</p>
 <p><strong>Deleting your account and data.</strong> In the app, open Profile and tap Delete account. The <a href="../delete-account/">account deletion page</a> sets out the steps, what is deleted and what is kept. You can also email us.</p>
 <p><strong>Complaints.</strong> Email us with the subject "Complaint". We acknowledge within 30 days and tell you the outcome. You can also complain to the Information Commissioner's Office.</p>
 <p><strong>Spotted a mistake in the law?</strong> Please tell us the section and what you think it should say. Do not send operational information, case details, or personal information about a member of the public.</p></article>
 </main>
 <footer class="site-footer"><div class="wrap">
-<a class="brand" href="../"><img src="../assets/icon-128.png" alt="" width="34" height="34"><span>Prep a Constable</span></a>
+<div class="foot-grid">
+<div class="foot-brand"><a class="brand" href="../"><img src="../assets/icon-128.png" alt="" width="34" height="34"><span>Prep a Constable</span></a>
+<p class="foot-tag">Revision for the constable assessments, AP1 to AP4.</p></div>
+<nav class="foot-col" aria-label="The app"><h2>The app</h2><ul><li><a href="../#demo">Try 5 questions</a></li><li><a href="../#features">What's inside</a></li><li><a href="../#law">Constable Companion</a></li><li><a href="../#pricing">Price</a></li><li><a href="../#download">Download</a></li></ul></nav>
+<nav class="foot-col" aria-label="Help"><h2>Help</h2><ul><li><a href="../support/">Support</a></li><li><a href="../delete-account/">Delete account</a></li><li><a href="mailto:support@prepaconstable.co.uk">support@prepaconstable.co.uk</a></li></ul></nav>
+<nav class="foot-col" aria-label="Legal"><h2>Legal</h2><ul><li><a href="../privacy/">Privacy</a></li><li><a href="../terms/">Terms</a></li></ul></nav>
+</div>
+<div class="foot-legal">
 <p>Not an official police app. Prep a Constable is not produced, endorsed or approved by any police force, the Metropolitan Police Service, the Home Office or the College of Policing.</p>
-<p>Published by Arim Capital Ltd.</p>
-<p>Arim Capital Ltd is a company registered in England and Wales. Company number 17574560. Registered office: 128 City Road, London, EC1V 2NX, United Kingdom.</p>
-<p><a href="mailto:support@prepaconstable.co.uk">support@prepaconstable.co.uk</a></p>
-<p class="footer-links"><a href="../privacy/">Privacy</a> <a href="../terms/">Terms</a> <a href="../support/" aria-current="page">Support</a> <a href="../delete-account/">Delete account</a></p>
+<p>Published by Arim Capital Ltd, a company registered in England and Wales. Company number 17574560. Registered office: 128 City Road, London, EC1V 2NX, United Kingdom.</p>
 <p>This website sets no cookies and uses no analytics.</p>
+</div>
 </div></footer>
 
 <script>(function(){var b=document.querySelector(".menu-btn"),n=document.getElementById("site-nav");if(!b||!n)return;function set(o){n.classList.toggle("open",o);b.setAttribute("aria-expanded",o?"true":"false")}b.addEventListener("click",function(){set(!n.classList.contains("open"))});n.addEventListener("click",function(e){if(e.target.closest("a"))set(false)});document.addEventListener("keydown",function(e){if(e.key==="Escape")set(false)})})();</script>
+<script src="../assets/support.js" defer></script>
 </body></html>

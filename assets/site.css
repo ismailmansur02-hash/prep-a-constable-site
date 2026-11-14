@@ -470,3 +470,27 @@ main [id] { scroll-margin-top: calc(var(--header-h) + env(safe-area-inset-top) +
 .get-badges li{width:calc(var(--bh)*3.357);justify-content:center;border-radius:calc(var(--bh)*.17);background:#000;box-shadow:inset 0 0 0 1px #a6a6a6}
 .get-badges .badge-apple{height:calc(var(--bh) - 2px)}
 @media (prefers-color-scheme:dark){.get-badges li:first-child{background:#fff;box-shadow:none}}
+/* support form */
+.form{display:grid;gap:8px;margin:18px 0 8px;max-width:560px}
+.form label{font-weight:700;margin-top:10px}
+.form input,.form select,.form textarea{font:inherit;color:var(--ink);background:var(--sheet);border:1px solid var(--soft);border-radius:8px;padding:12px 14px;min-height:48px;width:100%}
+.form textarea{resize:vertical;min-height:140px}
+.form input:focus-visible,.form select:focus-visible,.form textarea:focus-visible{outline:3px solid var(--link);outline-offset:2px}
+.form .try-btn{margin-top:14px;justify-self:start;border:0;cursor:pointer;font:inherit;font-weight:700}
+.form .try-btn:disabled{opacity:.6;cursor:default}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.form-status{margin:12px 0;font-weight:600}.form-status:empty{display:none}
+.form-status.bad{color:#b3261e}.form-status.ok{color:var(--ink)}
+@media (prefers-color-scheme:dark){.form-status.bad{color:#ffb4ab}}
+/* footer */
+.foot-grid{display:grid;gap:28px 24px;grid-template-columns:1fr 1fr}
+.foot-brand{grid-column:1/-1}
+.foot-tag{margin-top:6px}
+.foot-col h2{font-family:var(--sans);font-size:.8125rem;letter-spacing:.08em;text-transform:uppercase;margin:0 0 10px;color:var(--ink)}
+.foot-col ul{list-style:none;margin:0;padding:0}
+.foot-col li{margin:0}
+.foot-col a{display:inline-flex;align-items:center;min-height:40px;text-decoration:none;overflow-wrap:anywhere}
+.foot-col a:hover{text-decoration:underline}
+.foot-legal{margin-top:32px;padding-top:22px;border-top:1px solid var(--rule);font-size:.875rem}
+.foot-legal p{max-width:62em}
+@media (min-width:860px){.foot-grid{grid-template-columns:1.4fr 1fr 1fr .7fr}.foot-brand{grid-column:auto}}
