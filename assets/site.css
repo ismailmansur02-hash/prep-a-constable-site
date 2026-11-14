@@ -521,3 +521,14 @@ main [id] { scroll-margin-top: calc(var(--header-h) + env(safe-area-inset-top) +
 .law-stats span{font-size:1.0625rem}
 .law-small{font-size:1rem}
 .law-stats{max-width:none}
+/* Companion: centred, CC made obvious */
+.law-grid{grid-template-columns:minmax(0,1fr)!important;justify-items:center;text-align:center;gap:44px}
+.law-copy{max-width:46rem;display:flex;flex-direction:column;align-items:center}
+.law-copy p,.law-copy .law-lede{margin-left:auto;margin-right:auto}
+.law-cc{display:flex;align-items:center;justify-content:center;gap:12px;margin:0 0 18px}
+.cc-mark{display:inline-flex;align-items:center;justify-content:center;min-width:3.2rem;height:3.2rem;padding:0 .7rem;border-radius:14px;background:var(--mark);color:#14284b;font-family:var(--serif);font-weight:700;font-size:1.6rem;letter-spacing:.02em;line-height:1}
+.law .law-cc .law-eyebrow{font-size:1.0625rem;letter-spacing:.14em;text-transform:uppercase;color:var(--mark)}
+.law-tab{font-size:1.2rem;color:var(--on-navy-soft);margin:0 0 20px}
+.law-tab b{background:var(--mark);color:#14284b;padding:1px 9px;border-radius:7px}
+.law-stats{width:100%;justify-items:center;text-align:center}
+.law .device{position:static!important;width:min(100%,320px)}
