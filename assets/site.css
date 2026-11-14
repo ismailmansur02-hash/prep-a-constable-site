@@ -464,3 +464,6 @@ main [id] { scroll-margin-top: calc(var(--header-h) + env(safe-area-inset-top) +
 .law-stats span{display:block;margin-top:8px;font-size:.9375rem;line-height:1.3;color:var(--on-navy-soft)}
 .law .device{width:min(100%,300px)}
 @media (min-width:860px){.law-grid{grid-template-columns:minmax(0,1fr) 340px}}
+.get,#download .wrap{container-type:inline-size}
+@supports (width:1cqw){.get-badges{flex-wrap:nowrap;--bh:min(60px,calc((100cqw - 14px) / 6.3))}}
+.get-badges li{overflow:hidden;flex:none}
