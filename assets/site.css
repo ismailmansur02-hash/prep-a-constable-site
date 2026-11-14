@@ -503,3 +503,7 @@ main [id] { scroll-margin-top: calc(var(--header-h) + env(safe-area-inset-top) +
 .get-badges li:first-child{width:calc(var(--bh)*3.357);border-radius:calc(var(--bh)*.17);overflow:hidden;background:#000}
 .get-badges li:last-child{width:calc(var(--bh)*3.357)}
 .get-badges li:first-child picture{display:block;width:100%}
+.get-badges li:first-child{justify-content:center}
+.get-badges li:first-child picture{width:auto}
+.get-badges li:first-child .badge-apple{width:auto;height:100%}
+.get-badges li:first-child .badge-apple{height:106%;max-width:none}
