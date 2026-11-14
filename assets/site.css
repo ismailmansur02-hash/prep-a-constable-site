@@ -532,3 +532,5 @@ main [id] { scroll-margin-top: calc(var(--header-h) + env(safe-area-inset-top) +
 .law-tab b{background:var(--mark);color:#14284b;padding:1px 9px;border-radius:7px}
 .law-stats{width:100%;justify-items:center;text-align:center}
 .law .device{position:static!important;width:min(100%,320px)}
+.mark,h1 .mark{background:var(--mark);color:#14181f;text-decoration:none;padding:0 .18em;margin:0 -.04em;border-radius:.14em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+@media (prefers-color-scheme:dark){.mark,h1 .mark{background:var(--mark);color:#14181f;text-decoration:none}}
