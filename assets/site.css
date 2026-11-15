@@ -2,6 +2,13 @@
    Fonts are the app's own (Fraunces, Manrope), self-hosted. No remote requests, no tracking. */
 
 @font-face {
+  font-family: "AmpSans";
+  src: url("fonts/manrope-700.woff2") format("woff2");
+  font-weight: 100 900;
+  unicode-range: U+0026;
+  font-display: swap;
+}
+@font-face {
   font-family: "Fraunces";
   src: url("fonts/fraunces-600.woff2") format("woff2");
   font-weight: 600;
@@ -38,7 +45,7 @@
   --mark: #e1fa09;
   --focus: #1a3a6c;
   --bezel: #0d1626;
-  --serif: "Fraunces", "Iowan Old Style", Palatino, Georgia, serif;
+  --serif: "AmpSans", "Fraunces", "Iowan Old Style", Palatino, Georgia, serif;
   --sans: "Manrope", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
   --gutter: max(20px, env(safe-area-inset-left), env(safe-area-inset-right));
   --header-h: 64px;
