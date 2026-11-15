@@ -570,3 +570,6 @@ main [id] { scroll-margin-top: calc(var(--header-h) + env(safe-area-inset-top) +
 
 /* hero highlight: full yellow block, regular weight */
 .mark,h1 .mark{background:var(--mark)!important;color:#14181f!important;font-weight:400!important;text-decoration:none!important;padding:.02em .2em .06em;margin:0 -.06em;border-radius:.16em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.demo-screen{transition:height .2s ease}.demo-screen iframe{transition:transform .2s ease}
+.demo-bezel{box-sizing:content-box}
+@media (prefers-reduced-motion:reduce){.demo-screen,.demo-screen iframe{transition:none}}
