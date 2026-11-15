@@ -10,6 +10,13 @@
 }
 @font-face {
   font-family: "Fraunces";
+  src: url("fonts/fraunces-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Fraunces";
   src: url("fonts/fraunces-600.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
@@ -560,3 +567,6 @@ main [id] { scroll-margin-top: calc(var(--header-h) + env(safe-area-inset-top) +
 .law .law-device .demo-device{width:100%}
 .law .demo-small{color:var(--on-navy-soft)}
 .law .demo-fail,.law .demo-fail a{color:#fff}
+
+/* hero highlight: full yellow block, regular weight */
+.mark,h1 .mark{background:var(--mark)!important;color:#14181f!important;font-weight:400!important;text-decoration:none!important;padding:.02em .2em .06em;margin:0 -.06em;border-radius:.16em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
