@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<!-- The demo makes no network request of its own: scripts, fonts and images come from this folder and
-     connect-src 'none' blocks fetch, XHR and WebSocket. -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'none'; form-action 'none'; base-uri 'none'">
+<!-- The demo's own code makes no network request: scripts, fonts and images come from this folder. The only
+     outside request is the website's Cloudflare Web Analytics beacon (see the privacy notice, Website section). -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src https://cloudflareinsights.com; form-action 'none'; base-uri 'none'">
 <meta name="robots" content="noindex">
 <meta name="referrer" content="no-referrer">
 <title>Prep a Constable demo</title>
@@ -26,5 +26,6 @@ html,body{margin:0;padding:0;background:#fafaf7}#root{min-height:0}html{overflow
 <body>
 <div id="root"></div>
 <script src="app.js"></script>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "a019e170958e40a99ca5e7c90991592b"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>
