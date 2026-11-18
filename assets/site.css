@@ -576,3 +576,6 @@ main [id] { scroll-margin-top: calc(var(--header-h) + env(safe-area-inset-top) +
 /* hero highlight: a marker pen stroke, same weight as the heading */
 .mark,h1 .mark{background:linear-gradient(100deg,rgba(225,250,9,0) 0,rgba(225,250,9,.92) .35em,#e1fa09 1.2em,#e1fa09 calc(100% - 1em),rgba(225,250,9,.9) calc(100% - .3em),rgba(225,250,9,0) 100%) 0 62% / 100% .68em no-repeat!important;color:inherit!important;font-weight:inherit!important;padding:0 .14em;margin:0 -.14em;border-radius:0;text-decoration:none!important;-webkit-box-decoration-break:clone;box-decoration-break:clone}
 @media (prefers-color-scheme:dark){.mark,h1 .mark{background:linear-gradient(100deg,rgba(225,250,9,0) 0,rgba(225,250,9,.4) .35em,rgba(225,250,9,.46) 1.2em,rgba(225,250,9,.46) calc(100% - 1em),rgba(225,250,9,.4) calc(100% - .3em),rgba(225,250,9,0) 100%) 0 62% / 100% .68em no-repeat!important;color:#fff!important}}
+
+/* the address sits on its own line; it stays whole when it fits and only breaks on a screen too narrow for it */
+a[href^="mailto:"]{overflow-wrap:anywhere}
