@@ -579,3 +579,23 @@ main [id] { scroll-margin-top: calc(var(--header-h) + env(safe-area-inset-top) +
 
 /* the address sits on its own line; it stays whole when it fits and only breaks on a screen too narrow for it */
 a[href^="mailto:"]{overflow-wrap:anywhere}
+
+/* Constable Companion smart search, under the counted ledger */
+.feature-smart {
+  display: grid;
+  gap: 10px 48px;
+  margin-top: 36px;
+  padding-top: 28px;
+  border-top: 1px solid var(--rule);
+}
+.feature-smart h3 {
+  font-family: var(--serif);
+  font-size: clamp(1.55rem, 1.4vw + 1rem, 2.15rem);
+  margin: 0;
+}
+.feature-smart .eyebrow { margin-bottom: 8px; }
+.feature-smart p { margin: 0 0 0.75em; color: var(--soft); max-width: 40em; }
+.feature-smart p:last-child { margin-bottom: 0; }
+@media (min-width: 760px) {
+  .feature-smart { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: start; }
+}
