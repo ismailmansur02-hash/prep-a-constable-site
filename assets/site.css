@@ -580,22 +580,15 @@ main [id] { scroll-margin-top: calc(var(--header-h) + env(safe-area-inset-top) +
 /* the address sits on its own line; it stays whole when it fits and only breaks on a screen too narrow for it */
 a[href^="mailto:"]{overflow-wrap:anywhere}
 
-/* Constable Companion smart search, under the counted ledger */
-.feature-smart {
-  display: grid;
-  gap: 10px 48px;
-  margin-top: 36px;
-  padding-top: 28px;
-  border-top: 1px solid var(--rule);
-}
-.feature-smart h3 {
-  font-family: var(--serif);
-  font-size: clamp(1.55rem, 1.4vw + 1rem, 2.15rem);
-  margin: 0;
-}
-.feature-smart .eyebrow { margin-bottom: 8px; }
-.feature-smart p { margin: 0 0 0.75em; color: var(--soft); max-width: 40em; }
-.feature-smart p:last-child { margin-bottom: 0; }
-@media (min-width: 760px) {
-  .feature-smart { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: start; }
+/* Constable Companion smart search, beside the interactive preview */
+.cc-try { display: grid; gap: 32px; width: 100%; justify-items: center; }
+.cc-smart { max-width: 34rem; text-align: center; }
+.cc-smart .cc-smart-label { margin: 0 0 8px; font-size: 0.9375rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--mark); }
+.cc-smart h3 { font-family: var(--serif); font-size: clamp(1.55rem, 1.4vw + 1rem, 2.15rem); line-height: 1.15; margin: 0 0 14px; color: #fff; }
+.law-copy .cc-smart p, .cc-smart p { margin: 0 0 0.75em; color: var(--on-navy-soft); font-size: 1.0625rem; line-height: 1.55; max-width: none; }
+.cc-smart p:last-child { margin-bottom: 0; }
+.cc-smart .cc-smart-note { font-size: 0.9375rem; opacity: 0.85; }
+@media (min-width: 860px) {
+  .cc-try { grid-template-columns: minmax(0, 1fr) 340px; gap: 56px; align-items: center; max-width: 64rem; }
+  .cc-smart { text-align: left; justify-self: end; }
 }
