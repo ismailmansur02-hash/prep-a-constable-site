@@ -281,6 +281,8 @@ main [id] { scroll-margin-top: calc(var(--header-h) + env(safe-area-inset-top) +
 
 .ledger { list-style: none; margin: 0; padding: 0; border-top: 2px solid var(--ink); }
 .ledger li { display: grid; grid-template-columns: 5.2rem minmax(0, 1fr); gap: 2px 18px; padding: 18px 0; border-bottom: 1px solid var(--rule); align-items: baseline; }
+/* the section's own bottom edge closes the list: no second line under the last row */
+.ledger li:last-child { border-bottom: 0; }
 .ledger .n { font-family: var(--serif); font-size: 2.1rem; line-height: 1; letter-spacing: -0.02em; font-variant-numeric: lining-nums; }
 .ledger h3 { font-family: var(--sans); font-weight: 700; font-size: 1.0625rem; letter-spacing: 0; line-height: 1.35; }
 .ledger p { grid-column: 2; margin: 0; color: var(--soft); }
